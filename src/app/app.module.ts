@@ -10,7 +10,6 @@ import { LayoutModule } from '@layout/layout.module';
 import { EditorModule } from 'primeng/editor';
 import { InputTextModule } from 'primeng/inputtext';
 import { QuillModule } from 'ngx-quill';
-import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -25,12 +24,7 @@ import { LocationStrategy, PathLocationStrategy } from '@angular/common';
     EditorModule,
     InputTextModule
   ],
-  providers: [
-    {
-      provide: LocationStrategy,
-      useClass: PathLocationStrategy
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
